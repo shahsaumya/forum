@@ -1,0 +1,507 @@
+//
+// Flavor Theme Variables
+// --------------------------------------------------
+
+
+//== Colors
+//
+//## Gray and brand colors for use across Bootstrap.
+
+@gray-base:              #000;
+@gray-darker:            lighten(@gray-base, 13.5%); // #222
+@gray-dark:              lighten(@gray-base, 20%);   // #333
+@gray:                   lighten(@gray-base, 33.5%); // #555
+@gray-light:             lighten(@gray-base, 46.7%); // #777
+@gray-lighter:           lighten(@gray-base, 93.5%); // #eee
+
+@brand-primary:         #eee;
+// VIKINOTE: This is the blue color we have on the t-shirt.
+@brand-secondary:       #0A2342;
+// VIKINOTE: Pretty cool yellow color. Pun intended.
+@brand-fire:            #ffda79;
+@brand-dark-fire:       #D58936;
+@brand-success:         #43a047;
+@brand-info:            #3d5afe;
+@brand-warning:         #ef6c00;
+@brand-danger:          #f44336;
+
+
+//== Scaffolding
+//
+//## Settings for some of the most global styles.
+
+@scaffolding-bg:        #F7F6F3;
+
+//** Global text color on `<body>`.
+@text-color:            #101010;
+
+//** Global textual link color.
+@link-color:            @brand-primary;
+//** Link hover color set via `darken()` function.
+@link-hover-color:      darken(@link-color, 15%);
+//** Link hover decoration.
+@link-hover-decoration: underline;
+
+//** Shadows
+@shadow-key-umbra-opacity: 0.06;
+@shadow-key-penumbra-opacity: 0.04;
+@shadow-ambient-shadow-opacity: 0.12;
+
+//** Global color for active items (e.g., navs or dropdowns).
+@component-active-color:    #fff;
+//** Global background color for active items (e.g., navs or dropdowns).
+@component-active-bg:       @link-color;
+
+
+//== Buttons
+//
+//## For each of Bootstrap's buttons, define text, background and border color.
+
+// Default - non primary
+@btn-default-color:              #0A2342;
+@btn-default-bg:                 #f5f5f5;
+
+@btn-default-hover-color:        @text-color;
+@btn-default-hover-bg:           #e0e0e0;
+
+@btn-default-active-color:       @text-color;
+@btn-default-active-bg:          #bdbdbd;
+
+// Submit form
+@btn-primary-color:              #fff;
+@btn-primary-bg:                 @brand-secondary;
+
+@btn-primary-hover-color:        #fff;
+@btn-primary-hover-bg:           #314CB6;
+
+@btn-primary-active-color:       #fff;
+@btn-primary-active-bg:          darken(#b388ff, 15%);
+
+// Success button
+@btn-success-color:              #fff;
+@btn-success-bg:                 #00c853;
+
+@btn-success-hover-color:        #fff;
+@btn-success-hover-bg:           darken(#00c853, 5%);
+
+@btn-success-active-color:       #fff;
+@btn-success-active-bg:          darken(#00c853, 15%);
+
+// Delete something
+@btn-danger-color:               #fff;
+@btn-danger-bg:                  #ef5350;
+
+@btn-danger-hover-color:         #fff;
+@btn-danger-hover-bg:            #ff8a80;
+
+@btn-danger-active-color:        #fff;
+@btn-danger-active-bg:           #d32f2f;
+
+// Default outlined
+@btn-default-outline-color:              #616161;
+@btn-default-outline-border:             #e0e0e0;
+@btn-default-outline-bg:                 #e0e0e0;
+
+@btn-default-outline-hover-color:        #424242;
+@btn-default-outline-hover-border:       #bdbdbd;
+@btn-default-outline-hover-bg:           #bdbdbd;
+
+@btn-default-outline-active-color:       #212121;
+@btn-default-outline-active-border:      #eeeeee;
+@btn-default-outline-active-bg:          #eeeeee;
+
+// Primary outlined
+@btn-primary-outline-color:              #fff;
+@btn-primary-outline-border:             @brand-dark-fire;
+@btn-primary-outline-bg:                 @brand-dark-fire;
+
+@btn-primary-outline-hover-color:        #fff;
+@btn-primary-outline-hover-border:       #B2374D;
+@btn-primary-outline-hover-bg:           #B2374D;
+
+@btn-primary-outline-active-color:       #fff;
+@btn-primary-outline-active-border:      #6200ea;
+@btn-primary-outline-active-bg:          #6200ea;
+
+
+//== Navbar
+//
+//##
+
+@navbar-bg:                                @brand-secondary;
+
+// Navbar links
+@navbar-inverse-link-color:                #e0e0e0;
+@navbar-inverse-link-hover-color:          @brand-fire;
+@navbar-inverse-link-hover-bg:             inherit;
+@navbar-inverse-link-active-color:         #fff;
+@navbar-inverse-link-active-bg:            darken(@navbar-default-bg, 6.5%);
+@navbar-inverse-link-disabled-color:       #ccc;
+@navbar-inverse-link-disabled-bg:          transparent;
+
+//** Compact navbar
+@navbar-compact-link-color:                #e0e0e0;
+@navbar-compact-link-hover-color:          #212121;
+@navbar-compact-link-hover-bg:             #fafafa;
+
+// Navbar brand label
+@navbar-inverse-brand-color:               #fff;
+@navbar-inverse-brand-hover-color:         #fff;
+@navbar-inverse-brand-hover-bg:            inherit;
+
+// Sign in button
+@navbar-btn-sign-in-color:               #e0e0e0;
+@navbar-btn-sign-in-border:              @navbar-inverse-link-color;
+@navbar-btn-sign-in-bg:                  transparent;
+
+@navbar-btn-sign-in-hover-color:         @brand-secondary;
+@navbar-btn-sign-in-hover-border:        #666060;
+@navbar-btn-sign-in-hover-bg:            @navbar-inverse-link-hover-color;
+
+@navbar-btn-sign-in-active-color:        #fff;
+@navbar-btn-sign-in-active-border:       #424242;
+@navbar-btn-sign-in-active-bg:           #424242;
+
+@navbar-btn-sign-in-radius:                5px;
+
+// Register button
+@navbar-btn-register-color:              #e0e0e0;
+@navbar-btn-register-border:             @navbar-inverse-link-color;
+@navbar-btn-register-bg:                 transparent;
+
+@navbar-btn-register-hover-color:        @brand-secondary;
+@navbar-btn-register-hover-border:       #666060;
+@navbar-btn-register-hover-bg:           @navbar-inverse-link-hover-color;
+
+@navbar-btn-register-active-color:       #212121;
+@navbar-btn-register-active-border:      #bdbdbd;
+@navbar-btn-register-active-bg:          #bdbdbd;
+
+@navbar-btn-register-radius:               5px;
+
+
+//== Page header
+//
+//##
+
+// Basics
+//** Background
+@page-header-bg:              @brand-secondary;
+
+//** Heading color
+@page-header-color:               #fff;
+
+//** Other text color
+@page-header-text-color:          #ededed;
+//** Link color
+@page-header-link-color:          #fff;
+//** Text color
+@page-header-link-hover-color:    #f5f5f5;
+
+//** Heading min height
+@page-header-min-height:            8px;
+
+// Buttons
+//** Default
+@page-header-btn-default-color:              #fff;
+@page-header-btn-default-bg:                 @brand-dark-fire;
+
+@page-header-btn-default-hover-color:        #fff;
+@page-header-btn-default-hover-bg:           @brand-dark-fire;
+
+@page-header-btn-default-active-color:       #fff;
+@page-header-btn-default-active-bg:          #748EA4;
+
+//** Primary
+@page-header-btn-primary-color:              @brand-secondary;
+@page-header-btn-primary-bg:                 #f5f5f5;
+
+@page-header-btn-primary-hover-color:        @brand-secondary;
+@page-header-btn-primary-hover-bg:           #fff;
+
+@page-header-btn-primary-active-color:       #fff;
+@page-header-btn-primary-active-bg:          #212121;
+
+// Tabs
+@page-tabs-bg:              transparent;
+
+@page-tabs-link-color:      #ede7f6;
+@page-tabs-link-bg:         transparent;
+
+@page-tabs-link-hover-color:      #fff;
+@page-tabs-link-hover-bg:         @brand-dark-fire;
+
+@page-tabs-link-focus-color:      #fff;
+@page-tabs-link-focus-bg:         @brand-dark-fire;
+
+@page-tabs-link-active-color:     #424242;
+@page-tabs-link-active-bg:        @scaffolding-bg;
+
+
+//== Footer
+//
+//##
+@page-footer-bg:               @body-bg;
+@page-footer-text-color:       @gray-light;
+
+@page-footer-link-color:             #757575;
+@page-footer-link-hover-color:       #212121;
+
+@page-footer-brand-color:            @gray-darker;
+@page-footer-brand-hover-color:      lighten(@brand-dark-fire, 5%);
+
+
+//== Auth Message
+//
+//##
+@auth-message-bg:               #B2374D;
+@auth-message-text-color:       #fff;
+
+@auth-message-btn-default-color:            #fff;
+@auth-message-btn-default-border:           #4527a0;
+@auth-message-btn-default-bg:               #4527a0;
+
+@auth-message-btn-default-hover-color:      #fff;
+@auth-message-btn-default-hover-border:     #b388ff;
+@auth-message-btn-default-hover-bg:         #b388ff;
+
+@auth-message-btn-default-active-color:     @brand-dark-fire;
+@auth-message-btn-default-active-border:    #fff;
+@auth-message-btn-default-active-bg:        #fff;
+
+
+//== Form states and alerts
+//
+//## Define colors for form feedback states and, by default, alerts.
+
+@state-success-border:           #00c853;
+
+@state-danger-border:            #f44336;
+
+
+//== Alerts
+//
+//## Define alert colors, border radius, and padding.
+
+
+@alert-success-bg:            @brand-success;
+@alert-success-text:          #fff;
+@alert-success-border:        @brand-success;
+
+@alert-info-bg:               #448aff;
+@alert-info-text:             #fff;
+@alert-info-border:           #448aff;
+
+@alert-warning-bg:            @brand-warning;
+@alert-warning-text:          #fff;
+@alert-warning-border:        @brand-warning;
+
+@alert-danger-bg:             @brand-danger;
+@alert-danger-text:           #fff;
+@alert-danger-border:         @brand-danger;
+
+
+//== Modals
+//
+//##
+
+@modal-header-color:      #424242;
+@modal-header-bg:         #eeeeee;
+
+
+//== Dropdowns
+//
+//## Dropdown menu container and contents.
+
+//** Background for the dropdown menu.
+@dropdown-bg:                    #fff;
+//** Divider color for between dropdown items.
+@dropdown-divider-bg:            #e5e5e5;
+
+//** Dropdown link text color.
+@dropdown-link-color:            @gray-dark;
+//** Hover color for dropdown links.
+@dropdown-link-hover-color:      #FAFAFA;
+//** Hover background for dropdown links.
+@dropdown-link-hover-bg:         #424242;
+
+//** Active dropdown menu item text color.
+@dropdown-link-active-color:     @component-active-color;
+//** Active dropdown menu item background color.
+@dropdown-link-active-bg:        @component-active-bg;
+
+
+//** Default button in inversed dropdown
+@dropdown-btn-default-color:             darken(#fff, 30%);
+@dropdown-btn-default-border:            darken(#fff, 30%);
+@dropdown-btn-default-bg:                transparent;
+
+@dropdown-btn-default-hover-color:       #fff;
+@dropdown-btn-default-hover-border:      darken(#fff, 10%);
+@dropdown-btn-default-hover-bg:          @gray;
+
+@dropdown-btn-default-active-color:      @gray-darker;
+@dropdown-btn-default-active-border:     darken(#fff, 2%);
+@dropdown-btn-default-active-bg:         darken(#fff, 2%);
+
+//** Default button in inversed dropdown
+@dropdown-btn-primary-color:             darken(#fff, 10%);
+@dropdown-btn-primary-border:            #b388ff;
+@dropdown-btn-primary-bg:                transparent;
+
+@dropdown-btn-primary-hover-color:       #fff;
+@dropdown-btn-primary-hover-border:      #b388ff;
+@dropdown-btn-primary-hover-bg:          #b388ff;
+
+@dropdown-btn-primary-active-color:      #B2374D;
+@dropdown-btn-primary-active-border:     darken(#fff, 2%);
+@dropdown-btn-primary-active-bg:         darken(#fff, 2%);
+
+
+//== Progress bars
+//
+//##
+
+//** Background color of the whole progress component
+@progress-bg:                 #eee;
+//** Variable for setting rounded corners on progress bar.
+@progress-border-radius:      @border-radius-small;
+
+//** Default progress bar color
+@progress-bar-bg:             hsl(43, 100%, 50%);
+//** Success progress bar color
+@progress-bar-success-bg:     #00c853;
+//** Warning progress bar color
+@progress-bar-warning-bg:     #ff9100;
+//** Danger progress bar color
+@progress-bar-danger-bg:      #ff1744;
+
+
+//== Panels
+//
+//##
+@panel-heading-padding:          14px 15px;
+
+@panel-title-color:              @gray-light;
+
+@panel-default-heading-bg:       @panel-bg;
+@panel-footer-bg:                @panel-bg;
+
+@panel-fieldset-color:           @gray;
+
+@panel-form-border:              #ddd;
+
+
+//== List group
+//
+//##
+
+//** `.list-group-item` border color
+@list-group-bg:                 #FFFEFC;
+@list-group-border:             @gray-lighter;
+@list-group-border-radius:      @border-radius-small;
+@list-group-outer-border:       #ddd;
+
+@list-group-link-color:         @gray-light;
+@list-group-link-hover-color:   @text-color;
+
+
+//** Background color of single list items on hover
+@list-group-hover-bg:           @list-group-bg;
+//** Text color of active list items
+@list-group-active-color:       @link-color;
+//** Background color of active list items
+@list-group-active-bg:          @list-group-bg;
+//** Border color of active list elements
+@list-group-active-border:      @list-group-border;
+
+
+//== Side nav
+//
+//##
+
+@side-nav-bg:               #f5f5f5;
+@side-nav-color:            #757575;
+
+@side-nav-hover-bg:         #e0e0e0;
+@side-nav-hover-color:      #424242;
+
+@side-nav-active-bg:        @component-active-bg;
+@side-nav-active-color:     @component-active-color;
+
+
+//== Wells
+//
+//##
+
+@well-bg:                     #fff;
+@well-border:                 #ddd;
+
+
+//== Page messages
+//
+//##
+
+@error-icon-color:               #ef5350;
+
+@message-icon-color:             #9575cd;
+@message-info-icon-color:        #9575cd;
+@message-success-icon-color:     #81c784;
+
+
+//== User cards
+//
+//##
+
+@user-card-bg:          #f5f5f5;
+
+
+//== Categories list
+//
+//##
+
+@category-read-color:     @gray-lighter;
+@category-new-color:      @brand-primary;
+
+
+//== Threads list
+//
+//##
+
+@thread-unread-badge-color:       #aa00ff;
+
+@thread-global-badge-color:       #3d5afe;
+@thread-pinned-badge-color:       #8c9eff;
+
+@thread-unapproved-badge-color:         #ef6c00;
+@thread-unapproved-posts-badge-color:   #f4511e;
+
+// Diff message
+@threads-diff-color:             #fff;
+@threads-diff-bg:                @brand-dark-fire;
+
+@threads-diff-hover-color:       #fff;
+@threads-diff-hover-bg:          #6200ea;
+
+@threads-diff-active-color:      #fff;
+@threads-diff-active-bg:         darken(#6200ea, 10%);
+
+
+//== Posts
+//
+//##
+
+@post-bg:                         @body-bg;
+@post-border:                     #ddd;
+
+@post-unread-label:               #aa00ff;
+@post-protected-icon:             #bdbdbd;
+
+
+//== User status colors
+//
+//##
+
+@user-status-banned:      @brand-danger;
+@user-status-online:      @brand-success;
+@user-status-offline:     @gray-light;

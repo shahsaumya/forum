@@ -1,0 +1,44 @@
+//
+// Flavor Navbar
+// --------------------------------------------------
+
+
+.navbar-misago {
+  border-bottom: none;
+  background: @navbar-bg;
+  color: white;
+
+  &hover {
+    background: #fff;
+  }
+}
+
+.navbar-inverse .navbar-nav > li > a {
+  color: white;
+  background: inherit;
+  transition: 0.3s;
+
+  &hover {
+    background: inherit;
+    transition: 0.3s;
+    color: @navbar-inverse-link-hover-bg;
+  }
+}
+
+// Round up user's avatar
+.navbar-misago .user-avatar {
+  background: #fff;
+  border-radius: @border-radius-small;
+}
+
+
+// Round up brand's icon
+.navbar-misago .brand-link img {
+  border-radius: @border-radius-small;
+}
+
+// For DJVU.
+@import url('https://fonts.googleapis.com/css?family=Berkshire+Swash');
+a#djvu-link {
+  font-family: 'Berkshire Swash', cursive;
+}

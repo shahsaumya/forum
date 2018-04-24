@@ -1,0 +1,8 @@
+DATABASE_URL=<insert postgresql database url here>
+DEBUG=True <set this to false in production>
+DB_DEBUG=False <set this to false in production>
+SECRET_KEY=<your django secret key>
+EMAIL_ADR=<email address>
+EMAIL_PASSWORD=<email password>
+AWS_ACCESS_KEY_ID=<GCP storage access key id>
+AWS_SECRET_ACCESS_KEY=<GCP secret access key>

@@ -1,0 +1,7 @@
+*.pyc
+*.pyo
+secretkey.txt
+static/
+media/avatars/*
+logfile
+_venv_/
